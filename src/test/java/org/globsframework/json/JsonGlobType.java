@@ -9,20 +9,20 @@ import org.globsframework.metamodel.fields.IntegerField;
 import org.globsframework.metamodel.fields.StringField;
 
 public class JsonGlobType {
-  public static GlobType TYPE;
+   public static GlobType TYPE;
 
-  @KeyField
-  public static IntegerField ID;
+   @KeyField
+   public static IntegerField ID;
 
-  public static StringField NAME;
+   public static StringField NAME;
 
-  public static IntegerField COUNT;
+   public static IntegerField COUNT;
 
-  public static DoubleField VALUE;
+   public static DoubleField VALUE;
 
-  public static BooleanField IS_PRESENT;
+   public static BooleanField IS_PRESENT;
 
-  static {
-    GlobTypeLoaderFactory.createAndLoad(JsonGlobType.class);
-  }
+   static {
+      GlobTypeLoaderFactory.createAndLoad(JsonGlobType.class);
+   }
 }
